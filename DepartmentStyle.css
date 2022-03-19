@@ -1,0 +1,236 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    color: #d9d9d9;
+    
+    }
+    body{
+        font-family: 'Josefin Sans', sans-serif;
+        line-height: 1.5;
+    }
+    header{
+      position: sticky;
+      background: #171570;
+      justify-content: space-between;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1111;
+     }
+     
+     .mainheader{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     }
+     
+     .mainheader .logo img{
+      padding-left: 20px;
+      padding-top: 10px;
+      align-items: center;
+      cursor: pointer;
+      width: 250px;
+      height: 50px;
+     }
+     ul{
+      display: flex;
+      list-style: none;
+     }
+     
+     nav li{
+      padding: 5px 10px;
+      border: none;
+      display: inline-block;
+      padding: 5px;
+      transition: all linear 0.5s;
+      margin-right: 20px;
+      text-transform: uppercase;
+     }
+     
+     nav li a{
+         text-decoration:none;
+         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         color: rgb(255, 255, 255);
+         font-weight: 500;
+         padding: 5px;
+     }
+     nav li a:hover{
+       color: #00f7ff;
+     }
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    width: 100%;
+}
+#department{
+    background: linear-gradient(rgba(0,0,0,0,5),rgba(0,0,0,0,5));
+    background-color: #fdfdfd;
+    background-repeat: no-repeat;
+    background-size: 100 100%;
+}
+.container{
+  padding-top: 5px;
+  width: 100%;
+  height: 700px;
+}
+.container h1{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  color: #000;
+  position: relative;
+}
+.container h1::after{
+  content: '';
+  background: #286581;
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.row{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  padding-top: 100px;
+  
+
+}
+
+.item{
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 5px;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 14px;
+  background: transparent;
+}
+.item:hover{
+  background-color: #c6d7e2;
+  border-color: #000;
+  border-radius: 10px 50px;
+  border-style:ridge;
+}
+.item h2{
+  color: #1b2533;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.item p{
+  color: #000;
+}
+.item img {
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+}
+.button{
+        align-items: center;  
+        margin-top: 50px;
+        margin-left: 43%;
+        margin-right: 53%;
+        justify-content: center;  
+        color: #000;
+        border-radius: 15px;
+        background-color: rgb(150, 201, 221);
+        padding: 10px 15px;
+        text-align: center;
+        width: 200px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        cursor: pointer;
+        transition: .3s;
+      }
+
+.button:hover{
+    background: #000;
+    color: #ffffff;
+  }
+.footer{
+  position: fixed;
+  width: 100%;
+}
+.main-content{
+  display: flex;
+  padding: 25px;
+  padding-bottom: 60px;
+  background-color: #f1f8ff;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #000000;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #303ef7;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+  color: #000;
+}
+
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+  color: #000;
+
+}
+.right .content .text{
+  color: #000;
+}
+
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
